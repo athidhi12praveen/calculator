@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: rgb(0, 0, 0);
+    border:2px solid rgb(116, 114, 114);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background:transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+/* button zero */
+
+form input.zero{
+    width: 145px;
+    background-color: rgb(55, 55, 55);
+}
+
+form input.zero:hover{
+    background-color: rgb(89, 89, 89);
+}
+
+/* button row1-3 */
+
+form input.row1-3{
+    background-color: #818181;
+    color: black;
+}
+
+form input.row1-3:hover{
+    background-color: #acacac;
+}
+
+/* button for col4 */
+
+form input.col4{
+    background-color: rgb(255, 166, 0);
+}
+
+form input.col4:hover{
+    background-color: rgb(255, 191, 72);
+}
+
+/* button for numbers */
+
+form input.numbers{
+    background-color: rgb(55, 55, 55);
+}
+
+form input.numbers:hover{
+    background-color: rgb(89, 89, 89);
+}
